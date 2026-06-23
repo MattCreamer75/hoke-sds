@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F15A22">
+<title>Hoke Safety SDS Database</title>
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<meta name="apple-mobile-web-app-title" content="SDS Database">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>
+  :root{
+    --orange:#F15A22; --orange-dark:#C2461A; --orange-light:#FCE3D8;
+    --black:#1A1A1A; --silver-dark:#7A7A7A; --silver:#C0C0C0; --silver-light:#F2F2F2;
+    --page:#eef1f7; --card:#ffffff; --line:#d7dbe2; --hit:#FCE3D8;
+    --ok-bg:#e6f6ee; --ok-fg:#0f6e56; --ok-bd:#b7e3cf;
+    --vf-bg:#fef3e2; --vf-fg:#92590a; --vf-bd:#f5d9a8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--page);color:var(--black);-webkit-text-size-adjust:100%}
+  header{background:#fff;color:var(--black);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0));
+         border-bottom:1px solid var(--silver);position:sticky;top:0;z-index:20;box-shadow:0 1px 3px rgba(26,26,26,.08)}
+  .wrap{max-width:880px;margin:0 auto;padding:0 16px}
+  .brandrow{display:flex;align-items:center;gap:16px}
+  .logo{height:44px;width:auto;max-width:280px;object-fit:contain;display:block}
+  .titlebox{line-height:1.3}
+  .prodname{font-size:15px;font-weight:600;color:var(--black);display:flex;align-items:center;gap:6px;margin:0}
+  .prodname svg{flex:0 0 auto}
+  .loc{font-size:12px;color:var(--silver-dark);margin:1px 0 0}
+  .searchbar{position:relative;margin-top:12px}
+  #q{width:100%;padding:12px 44px 12px 14px;font-size:16px;border:1px solid var(--silver);border-radius:8px;
+     outline:none;color:var(--black);background:#fff;transition:border-color .15s,box-shadow .15s}
+  #q:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(241,90,34,.18)}
+  .clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:none;background:var(--silver-light);
+         color:var(--silver-dark);width:28px;height:28px;border-radius:50%;font-size:17px;line-height:1;cursor:pointer;display:none}
+  .chips{max-width:880px;margin:12px auto 0;padding:0 16px;display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .chip{flex:0 0 auto;border:1px solid var(--silver);background:#fff;color:var(--black);
+        padding:6px 13px;border-radius:6px;font-size:13.5px;cursor:pointer;white-space:nowrap;font-weight:500;transition:all .12s}
+  .chip:hover{border-color:var(--orange)}
+  .chip.active{background:var(--orange);color:#fff;border-color:var(--orange);box-shadow:0 1px 2px rgba(241,90,34,.3)}
+  main{max-width:880px;margin:0 auto;padding:14px 16px 80px}
+  .meta{font-size:12.5px;color:var(--silver-dark);margin:4px 2px 12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 14px;
+        margin-bottom:10px;display:block;text-decoration:none;color:inherit;box-shadow:0 1px 2px rgba(26,26,26,.05);transition:all .15s ease}
+  .card.haspdf:hover{border-color:var(--orange);box-shadow:0 4px 14px -6px rgba(26,26,26,.2);transform:translateY(-1px)}
+  .card.nopdf{opacity:.92}
+  .ptitle{font-size:16px;font-weight:600;line-height:1.25;color:var(--black)}
+  .row2{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:7px;font-size:12.5px;color:var(--silver-dark)}
+  .badge{background:var(--orange-light);color:var(--orange-dark);border:1px solid rgba(241,90,34,.3);border-radius:6px;padding:1px 8px;font-weight:600}
+  .rev{color:var(--silver-dark)}
+  .pill{border-radius:6px;padding:1px 8px;font-weight:600;border:1px solid}
+  .pill.ok{background:var(--ok-bg);color:var(--ok-fg);border-color:var(--ok-bd)}
+  .pill.vf{background:var(--vf-bg);color:var(--vf-fg);border-color:var(--vf-bd)}
+  .ghs{display:inline-flex;gap:3px;flex-wrap:wrap;align-items:center}
+  .ghsicon{width:28px;height:28px;display:inline-block;vertical-align:middle}
+  .open{margin-left:auto;color:var(--orange);font-weight:700}
+  .nopdf-tag{margin-left:auto;color:var(--silver-dark);font-weight:600;font-style:italic}
+  mark{background:var(--hit);padding:0 1px;border-radius:3px}
+  .empty{text-align:center;color:var(--silver-dark);padding:50px 20px}
+  .empty b{color:var(--black)}
+  footer{max-width:880px;margin:0 auto;padding:8px 16px 40px;color:var(--silver-dark);font-size:11.5px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brandrow">
+      <img class="logo" src="assets/hoke-logo.png" alt="Hoke Industrial LLC — Lufkin, TX">
+      <div class="titlebox">
+        <p class="prodname">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F15A22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+          Hoke Safety SDS Database
+        </p>
+        <p class="loc">Lufkin, TX</p>
+      </div>
+    </div>
+    <div class="searchbar">
+      <input id="q" type="search" inputmode="search" autocomplete="off" placeholder="Search e.g. acetone, argon, Krylon, diesel..." aria-label="Search SDS">
+      <button class="clear" id="clear" aria-label="Clear">&times;</button>
+    </div>
+  </div>
+</header>
+<div class="chips" id="chips"></div>
+<main>
+  <div class="meta" id="meta">Loading…</div>
+  <div id="results"></div>
+  <div class="empty" id="empty" style="display:none"></div>
+</main>
+<footer id="foot"></footer>
+
+<script>
+const GHS={GHS01:"Explosive",GHS02:"Flammable",GHS03:"Oxidizer",GHS04:"Gas under pressure",GHS05:"Corrosive",GHS06:"Toxic",GHS07:"Irritant / harmful",GHS08:"Health hazard",GHS09:"Environmental"};
+let DATA=[],cat="All",term="";
+const $=s=>document.querySelector(s);
+function esc(s){return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function hi(t,q){t=esc(t);if(!q)return t;const s=q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");return t.replace(new RegExp("("+s+")","ig"),"<mark>$1</mark>");}
+
+function render(){
+  const q=term.trim().toLowerCase();
+  let rows=DATA.filter(d=>{
+    if(cat!=="All" && d.category!==cat) return false;
+    if(!q) return true;
+    return (d.product+" "+d.manufacturer+" "+d.category+" "+(d.ghs||[]).join(" ")).toLowerCase().includes(q);
+  });
+  $("#meta").textContent=rows.length+(rows.length===1?" sheet":" sheets")+(cat==="All"?"":" in "+cat)+(q?' for "'+term.trim()+'"':"");
+  const res=$("#results"),empty=$("#empty");
+  if(!rows.length){res.innerHTML="";empty.style.display="block";empty.innerHTML="<p>No match for <b>"+esc(term.trim())+"</b>.</p><p>Try fewer letters, the manufacturer, or a different spelling.</p>";return;}
+  empty.style.display="none";
+  res.innerHTML=rows.map(d=>{
+    const mfr=d.manufacturer?'<span>'+hi(d.manufacturer,term)+'</span>':'';
+    const rev=d.revision?'<span class="rev">Rev '+esc(d.revision)+'</span>':'';
+    let status='';
+    if(d.status==='On file') status='<span class="pill ok">On file</span>';
+    else if(d.status) status='<span class="pill vf">'+esc(d.status)+'</span>';
+    const ghs=(d.ghs&&d.ghs.length)?'<span class="ghs">'+d.ghs.map(g=>'<img class="ghsicon" src="assets/ghs/'+g+'.png" alt="'+(GHS[g]||g)+'" title="'+(GHS[g]||g)+'" loading="lazy">').join('')+'</span>':'';
+    const action=d.has_pdf?'<span class="open">Open ›</span>':'<span class="nopdf-tag">SDS not on file</span>';
+    const inner='<div class="ptitle">'+hi(d.product,term)+'</div>'
+      +'<div class="row2"><span class="badge">'+esc(d.category)+'</span>'+mfr+rev+status+ghs+action+'</div>';
+    return d.has_pdf
+      ? '<a class="card haspdf" href="'+encodeURI(d.path)+'" target="_blank" rel="noopener">'+inner+'</a>'
+      : '<div class="card nopdf">'+inner+'</div>';
+  }).join("");
+}
+function buildChips(cats){
+  const list=["All",...cats];
+  $("#chips").innerHTML=list.map(c=>'<button class="chip'+(c===cat?' active':'')+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
+  document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{cat=b.dataset.c;document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x===b));render();});
+}
+$("#q").addEventListener("input",e=>{term=e.target.value;$("#clear").style.display=term?"block":"none";render();});
+$("#clear").onclick=()=>{term="";$("#q").value="";$("#clear").style.display="none";$("#q").focus();render();};
+
+fetch("sds-index.json?_="+Date.now()).then(r=>r.json()).then(j=>{
+  DATA=j.items||[];
+  buildChips(j.categories||Array.from(new Set(DATA.map(d=>d.category))).sort());
+  render();
+  const miss=DATA.filter(d=>!d.has_pdf).length;
+  $("#foot").innerHTML="Hoke Industrial LLC &middot; Lufkin, TX &middot; "+DATA.length+" products &middot; Updated "+(j.generated||"")+(miss?(" &middot; "+miss+" awaiting SDS"):"")+" &middot; Keep the printed binder as backup.";
+}).catch(()=>{$("#meta").textContent="";$("#empty").style.display="block";$("#empty").innerHTML="<p><b>Couldn't load the SDS list.</b></p><p>Open this page from its web address, not as a local file.</p>";});
+</script>
+</body>
+</html>

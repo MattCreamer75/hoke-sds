@@ -1,0 +1,605 @@
+{
+  "generated": "2026-06-23 13:23",
+  "count": 35,
+  "categories": [
+    "Adhesive / sealant",
+    "Aerosol",
+    "Cleaner",
+    "Cutting fluid",
+    "Fuel",
+    "Gas",
+    "Maintenance / lube",
+    "Metal prep",
+    "Paint / coating",
+    "Solvent",
+    "Stick electrode",
+    "Welding wire"
+  ],
+  "items": [
+    {
+      "id": "sds-19-dap-100-silicone-sealant-clear",
+      "product": "DAP 100% Silicone Sealant (Clear)",
+      "category": "Adhesive / sealant",
+      "category_key": "adhesive",
+      "manufacturer": "DAP Global",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS08",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/19 DAP 100 Silicone Sealant (Clear).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-31-crc-anti-spatter-aerosol",
+      "product": "CRC Anti-Spatter (Aerosol)",
+      "category": "Aerosol",
+      "category_key": "aerosol",
+      "manufacturer": "CRC Industries Europe",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/31 CRC Anti-Spatter (Aerosol).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-14-crc-foaming-coil-cleaner-03196",
+      "product": "CRC Foaming Coil Cleaner (03196)",
+      "category": "Aerosol",
+      "category_key": "aerosol",
+      "manufacturer": "CRC Industries",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/14 CRC Foaming Coil Cleaner (03196).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-13-perfectstop-non-chlorinated-brake-cleane",
+      "product": "PerfectStop Non-Chlorinated Brake Cleaner",
+      "category": "Aerosol",
+      "category_key": "aerosol",
+      "manufacturer": "Penray",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/13 PerfectStop Non-Chlorinated Brake Cleaner.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-20-wasp-hornet-killer-tough-guy-2dcb5",
+      "product": "Wasp & Hornet Killer (Tough Guy 2DCB5)",
+      "category": "Aerosol",
+      "category_key": "aerosol",
+      "manufacturer": "ITW Pro Brands (Dymon)",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/20 Wasp & Hornet Killer (Tough Guy 2DCB5).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-10-crc-battery-cleaner-w-acid-indicator-050",
+      "product": "CRC Battery Cleaner w/ Acid Indicator (05023)",
+      "category": "Cleaner",
+      "category_key": "cleaner",
+      "manufacturer": "CRC Industries",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/10 CRC Battery Cleaner w Acid Indicator (05023).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-07-dg-window-cleaner-with-ammonia",
+      "product": "DG Window Cleaner with Ammonia",
+      "category": "Cleaner",
+      "category_key": "cleaner",
+      "manufacturer": "Sun-Pine (Dollar General)",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "None",
+      "ghs": [
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/07 DG Window Cleaner with Ammonia.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-34-no-rinse-neutral-ph-floor-cleaner",
+      "product": "No Rinse Neutral pH Floor Cleaner",
+      "category": "Cleaner",
+      "category_key": "cleaner",
+      "manufacturer": "OdoBan",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/34 No Rinse Neutral pH Floor Cleaner.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-35-windex-glass-cleaner",
+      "product": "Windex Glass Cleaner",
+      "category": "Cleaner",
+      "category_key": "cleaner",
+      "manufacturer": "S.C. Johnson",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "None",
+      "ghs": [
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/35 Windex Glass Cleaner.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-12-crc-cutting-oil-14050",
+      "product": "CRC Cutting Oil (14050)",
+      "category": "Cutting fluid",
+      "category_key": "cutting-fluid",
+      "manufacturer": "CRC Industries",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/12 CRC Cutting Oil (14050).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-11-relton-new-rapid-tap",
+      "product": "Relton New Rapid Tap",
+      "category": "Cutting fluid",
+      "category_key": "cutting-fluid",
+      "manufacturer": "Relton Corporation",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS02",
+        "GHS08",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/11 Relton New Rapid Tap.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-33-no-2-diesel-fuel-ulsd",
+      "product": "No. 2 Diesel Fuel (ULSD)",
+      "category": "Fuel",
+      "category_key": "fuel",
+      "manufacturer": "Marathon (Sun Coast Resources)",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS08"
+      ],
+      "location": "",
+      "path": "sds/33 No. 2 Diesel Fuel (ULSD).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-15-star-tron-enzyme-fuel-treatment-gas",
+      "product": "Star Tron Enzyme Fuel Treatment (Gas)",
+      "category": "Fuel",
+      "category_key": "fuel",
+      "manufacturer": "Star brite / Ocean Bio-Chem",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/15 Star Tron Enzyme Fuel Treatment (Gas).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-32-unleaded-gasoline-all-grades",
+      "product": "Unleaded Gasoline (All Grades)",
+      "category": "Fuel",
+      "category_key": "fuel",
+      "manufacturer": "Marathon (Sun Coast Resources)",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS08"
+      ],
+      "location": "",
+      "path": "sds/32 Unleaded Gasoline (All Grades).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-21-acetylene-dissolved-un1001",
+      "product": "Acetylene, Dissolved (UN1001)",
+      "category": "Gas",
+      "category_key": "gas",
+      "manufacturer": "MATHESON Tri-Gas",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS04"
+      ],
+      "location": "",
+      "path": "sds/21 Acetylene Dissolved (UN1001).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-22-argon-compressed-un1006",
+      "product": "Argon, Compressed (UN1006)",
+      "category": "Gas",
+      "category_key": "gas",
+      "manufacturer": "MATHESON Tri-Gas",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS04"
+      ],
+      "location": "",
+      "path": "sds/22 Argon Compressed (UN1006).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-24-c25-75-argon-25-co2",
+      "product": "C25 — 75% Argon / 25% CO2",
+      "category": "Gas",
+      "category_key": "gas",
+      "manufacturer": "Western International Gas",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS04"
+      ],
+      "location": "",
+      "path": "sds/24 C25  75 Argon  25 CO2.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-23-carbon-dioxide-gas-un1013",
+      "product": "Carbon Dioxide, Gas (UN1013)",
+      "category": "Gas",
+      "category_key": "gas",
+      "manufacturer": "MATHESON Tri-Gas",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS04"
+      ],
+      "location": "",
+      "path": "sds/23 Carbon Dioxide Gas (UN1013).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-18-oxygen-compressed-un1072",
+      "product": "Oxygen, Compressed (UN1072)",
+      "category": "Gas",
+      "category_key": "gas",
+      "manufacturer": "MATHESON Tri-Gas",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS03",
+        "GHS04"
+      ],
+      "location": "",
+      "path": "sds/18 Oxygen Compressed (UN1072).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-25-propane-lpg-un1978",
+      "product": "Propane / LPG (UN1978)",
+      "category": "Gas",
+      "category_key": "gas",
+      "manufacturer": "MATHESON Tri-Gas",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS04"
+      ],
+      "location": "",
+      "path": "sds/25 Propane  LPG (UN1978).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-16-schaeffer-s-205a-full-synthetic-atf",
+      "product": "Schaeffer's #205A Full-Synthetic ATF",
+      "category": "Maintenance / lube",
+      "category_key": "maintenance",
+      "manufacturer": "Schaeffer Mfg.",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "None",
+      "ghs": [
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/16 Schaeffers 205A Full-Synthetic ATF.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-08-krud-kutter-metal-clean-etch",
+      "product": "Krud Kutter Metal Clean & Etch",
+      "category": "Metal prep",
+      "category_key": "metal-prep",
+      "manufacturer": "Rust-Oleum",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS05",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/08 Krud Kutter Metal Clean & Etch.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-04-7543402-safety-yellow",
+      "product": "7543402 Safety Yellow",
+      "category": "Paint / coating",
+      "category_key": "paint",
+      "manufacturer": "Rust-Oleum",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/04 7543402 Safety Yellow.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-01-pro-industrial-gloss-black",
+      "product": "Pro Industrial Gloss Black",
+      "category": "Paint / coating",
+      "category_key": "paint",
+      "manufacturer": "Sherwin-Williams",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS02",
+        "GHS08",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/01 Pro Industrial Gloss Black.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-02-pro-industrial-pure-white",
+      "product": "Pro Industrial Pure White",
+      "category": "Paint / coating",
+      "category_key": "paint",
+      "manufacturer": "Sherwin-Williams",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS02",
+        "GHS08",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/02 Pro Industrial Pure White.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-03-pro-industrial-safety-yellow",
+      "product": "Pro Industrial Safety Yellow",
+      "category": "Paint / coating",
+      "category_key": "paint",
+      "manufacturer": "Sherwin-Williams",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS02",
+        "GHS08",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/03 Pro Industrial Safety Yellow.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-09-klean-strip-acetone",
+      "product": "Klean-Strip Acetone",
+      "category": "Solvent",
+      "category_key": "solvent",
+      "manufacturer": "W.M. Barr (Klean-Strip)",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/09 Klean-Strip Acetone.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-05-sw-mineral-spirits",
+      "product": "SW Mineral Spirits",
+      "category": "Solvent",
+      "category_key": "solvent",
+      "manufacturer": "Sherwin-Williams",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/05 SW Mineral Spirits.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-06-sw-xylene",
+      "product": "SW Xylene",
+      "category": "Solvent",
+      "category_key": "solvent",
+      "manufacturer": "Sherwin-Williams",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "DANGER",
+      "ghs": [
+        "GHS02",
+        "GHS07"
+      ],
+      "location": "",
+      "path": "sds/06 SW Xylene.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-28-washington-alloy-e6010-stick-electrode",
+      "product": "Washington Alloy E6010 Stick Electrode",
+      "category": "Stick electrode",
+      "category_key": "electrode",
+      "manufacturer": "Washington Alloy",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "None",
+      "ghs": [
+        "GHS08"
+      ],
+      "location": "",
+      "path": "sds/28 Washington Alloy E6010 Stick Electrode.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-29-washington-alloy-e6011-stick-electrode",
+      "product": "Washington Alloy E6011 Stick Electrode",
+      "category": "Stick electrode",
+      "category_key": "electrode",
+      "manufacturer": "Washington Alloy",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "None",
+      "ghs": [
+        "GHS08"
+      ],
+      "location": "",
+      "path": "sds/29 Washington Alloy E6011 Stick Electrode.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-30-washington-alloy-e7018-1-stick-electrode",
+      "product": "Washington Alloy E7018-1 Stick Electrode",
+      "category": "Stick electrode",
+      "category_key": "electrode",
+      "manufacturer": "Washington Alloy",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS08"
+      ],
+      "location": "",
+      "path": "sds/30 Washington Alloy E7018-1 Stick Electrode.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-17-er308l-stainless-welding-wire",
+      "product": "ER308L Stainless Welding Wire",
+      "category": "Welding wire",
+      "category_key": "wire",
+      "manufacturer": "Welding Material Sales",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "WARNING",
+      "ghs": [
+        "GHS08"
+      ],
+      "location": "",
+      "path": "sds/17 ER308L Stainless Welding Wire.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-27-lincoln-ultracore-71a85-flux-cored-045",
+      "product": "Lincoln UltraCore 71A85 Flux-Cored (.045)",
+      "category": "Welding wire",
+      "category_key": "wire",
+      "manufacturer": "Lincoln Electric",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "None",
+      "ghs": [
+        "GHS08"
+      ],
+      "location": "",
+      "path": "sds/27 Lincoln UltraCore 71A85 Flux-Cored (.045).pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-26-viking-er70s-6-carbon-steel-mig-wire",
+      "product": "Viking ER70S-6 Carbon Steel MIG Wire",
+      "category": "Welding wire",
+      "category_key": "wire",
+      "manufacturer": "Davis Wire / National Standard",
+      "revision": "Rev 2026-06 (v1.0)",
+      "status": "On file",
+      "signal": "None",
+      "ghs": [
+        "GHS08"
+      ],
+      "location": "",
+      "path": "sds/26 Viking ER70S-6 Carbon Steel MIG Wire.pdf",
+      "has_pdf": true
+    }
+  ]
+}
