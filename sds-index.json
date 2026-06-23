@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-23 17:53",
-  "count": 36,
+  "generated": "2026-06-23 18:10",
+  "count": 37,
   "categories": [
     "Adhesive / sealant",
     "Aerosol",
@@ -10,6 +10,7 @@
     "Gas",
     "Maintenance / lube",
     "Metal prep",
+    "Other",
     "Paint / coating",
     "Solvent",
     "Stick electrode",
@@ -399,6 +400,22 @@
       ],
       "location": "",
       "path": "sds/08 Krud Kutter Metal Clean & Etch.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-added-commercial-abc-dry-chemical-fire-extinguisher-mqqykl89",
+      "product": "Commercial ABC Dry Chemical Fire Extinguisher",
+      "category": "Other",
+      "category_key": "other",
+      "manufacturer": "Walter Kidde Portable Equipment, Inc.",
+      "revision": "10/20/2023",
+      "status": "On file",
+      "signal": "Warning",
+      "ghs": [
+        "GHS08"
+      ],
+      "location": "Shop/Field",
+      "path": "sds/Added/Commercial ABC Dry Chemical Fire Extinguisher (37).pdf",
       "has_pdf": true
     },
     {
