@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-23 13:23",
-  "count": 35,
+  "generated": "2026-06-23 17:47",
+  "count": 36,
   "categories": [
     "Adhesive / sealant",
     "Aerosol",
@@ -364,6 +364,24 @@
       ],
       "location": "",
       "path": "sds/16 Schaeffers 205A Full-Synthetic ATF.pdf",
+      "has_pdf": true
+    },
+    {
+      "id": "sds-added-wd-40-mqqxj65b",
+      "product": "WD-40",
+      "category": "Maintenance / lube",
+      "category_key": "maintenance",
+      "manufacturer": "WD-40 Corp",
+      "revision": "11/13/2024",
+      "status": "On file",
+      "signal": "Warning",
+      "ghs": [
+        "GHS02",
+        "GHS07",
+        "GHS08"
+      ],
+      "location": "Shop/Field",
+      "path": "sds/Added/WD-40 (36).pdf",
       "has_pdf": true
     },
     {
