@@ -60,6 +60,9 @@
   mark{background:var(--hit);padding:0 1px;border-radius:3px}
   .empty{text-align:center;color:var(--silver-dark);padding:50px 20px}
   .empty b{color:var(--black)}
+  .guidenote{display:flex;align-items:center;gap:9px;background:var(--orange-light);border:1px solid rgba(241,90,34,.35);color:var(--orange-dark);border-radius:10px;padding:11px 14px;margin:0 0 12px;text-decoration:none;font-size:13.5px;font-weight:500;line-height:1.35}
+  .guidenote svg{flex:0 0 auto}
+  .guidenote b{font-weight:700}
   footer{max-width:880px;margin:0 auto;padding:8px 16px 40px;color:var(--silver-dark);font-size:11.5px;text-align:center}
 </style>
 </head>
@@ -85,6 +88,7 @@
 <div class="chips" id="chips"></div>
 <main>
   <div class="meta" id="meta">Loading…</div>
+  <div id="guidenote"></div>
   <div id="results"></div>
   <div class="empty" id="empty" style="display:none"></div>
 </main>
@@ -104,6 +108,7 @@ function render(){
     if(!q) return true;
     return (d.product+" "+d.manufacturer+" "+d.category+" "+(d.ghs||[]).join(" ")).toLowerCase().includes(q);
   });
+  rows.sort(function(a,b){ if(!!a.pinned!==!!b.pinned) return a.pinned?-1:1; return (a.product||"").toLowerCase().localeCompare((b.product||"").toLowerCase()); });
   $("#meta").textContent=rows.length+(rows.length===1?" sheet":" sheets")+(cat==="All"?"":" in "+cat)+(q?' for "'+term.trim()+'"':"");
   const res=$("#results"),empty=$("#empty");
   if(!rows.length){res.innerHTML="";empty.style.display="block";empty.innerHTML="<p>No match for <b>"+esc(term.trim())+"</b>.</p><p>Try fewer letters, the manufacturer, or a different spelling.</p>";return;}
@@ -131,13 +136,21 @@ function buildChips(cats){
 $("#q").addEventListener("input",e=>{term=e.target.value;$("#clear").style.display=term?"block":"none";render();});
 $("#clear").onclick=()=>{term="";$("#q").value="";$("#clear").style.display="none";$("#q").focus();render();};
 
-fetch("sds-index.json?_="+Date.now()).then(r=>r.json()).then(j=>{
+function loadIndex(){
+fetch("sds-index.json?_="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(j=>{
   DATA=j.items||[];
+  var guide=DATA.find(function(d){return d.pinned;});
+  if(guide && guide.has_pdf){
+    document.getElementById("guidenote").innerHTML='<a class="guidenote" href="'+encodeURI(guide.path)+'" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span>New to safety data sheets? Tap to open <b>&ldquo;How to Read an SDS&rdquo;</b> &mdash; a one-page guide to reading any SDS.</span></a>';
+  }
   buildChips(j.categories||Array.from(new Set(DATA.map(d=>d.category))).sort());
   render();
   const miss=DATA.filter(d=>!d.has_pdf).length;
   $("#foot").innerHTML="Hoke Industrial LLC &middot; Lufkin, TX &middot; "+DATA.length+" products &middot; Updated "+(j.generated||"")+(miss?(" &middot; "+miss+" awaiting SDS"):"")+" &middot; Keep the printed binder as backup.";
 }).catch(()=>{$("#meta").textContent="";$("#empty").style.display="block";$("#empty").innerHTML="<p><b>Couldn't load the SDS list.</b></p><p>Open this page from its web address, not as a local file.</p>";});
+}
+loadIndex();
+document.addEventListener("visibilitychange",function(){ if(!document.hidden) loadIndex(); });
+window.addEventListener("pageshow",function(e){ if(e.persisted) loadIndex(); });
 </script>
-</body>
-</html>
+<
