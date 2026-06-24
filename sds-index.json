@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24 16:48",
+  "generated": "2026-06-24 17:26",
   "count": 68,
   "categories": [
     "Adhesive / sealant",
@@ -720,24 +720,6 @@
       "pinned": false
     },
     {
-      "id": "sds-04-7543402-safety-yellow",
-      "product": "7543402 Safety Yellow",
-      "category": "Paint / coating",
-      "category_key": "paint",
-      "manufacturer": "Rust-Oleum",
-      "revision": "Rev 2026-06 (v1.0)",
-      "status": "On file",
-      "signal": "DANGER",
-      "ghs": [
-        "GHS02",
-        "GHS07"
-      ],
-      "location": "",
-      "path": "sds/Paint & Coating/04 7543402 Safety Yellow.pdf",
-      "has_pdf": true,
-      "pinned": false
-    },
-    {
       "id": "sds-photoref-dupli-color-bed-armor-truck-bed-coating",
       "product": "Dupli-Color Bed Armor Truck Bed Coating",
       "category": "Paint / coating",
@@ -810,6 +792,25 @@
       ],
       "location": "",
       "path": "sds/Paint & Coating/03 Pro Industrial Safety Yellow.pdf",
+      "has_pdf": true,
+      "pinned": false
+    },
+    {
+      "id": "sds-paint-area-7543402-safety-yellow-pdf",
+      "product": "Rust-Oleum Safety Yellow",
+      "category": "Paint / coating",
+      "category_key": "paint",
+      "manufacturer": "Rust-Oleum",
+      "revision": "2022/10/14",
+      "status": "On file",
+      "signal": "Danger",
+      "ghs": [
+        "GHS02",
+        "GHS07",
+        "GHS08"
+      ],
+      "location": "Paint shop",
+      "path": "sds/Paint & Coating/Rust-Oleum Safety Yellow (68).pdf",
       "has_pdf": true,
       "pinned": false
     },
